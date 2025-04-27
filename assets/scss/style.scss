@@ -354,9 +354,9 @@ footer {
 }
 
 // Import partials
-@import "sass/variables";
-@import "sass/layout";
-@import "sass/components";
+@import "../sass/variables";
+@import "../sass/layout";
+@import "../sass/components";
 
 .intro, .features, .transform, .quote, .cta {
     padding: 80px 0;

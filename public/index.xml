@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Welcome on My New Hugo Site</title>
-    <link>//localhost:1313///dooley_downs/public/</link>
+    <link>https://stivizi.github.io/dooley_downs/</link>
     <description>Recent content in Welcome on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313///dooley_downs/public/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://stivizi.github.io/dooley_downs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Welcome to Dooley Downs</title>
-      <link>//localhost:1313///dooley_downs/public/venue-images/</link>
+      <link>https://stivizi.github.io/dooley_downs/venue-images/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313///dooley_downs/public/venue-images/</guid>
+      <guid>https://stivizi.github.io/dooley_downs/venue-images/</guid>
       <description>&lt;p&gt;Nestled on over 26 acres in the picturesque Cordova Bay neighbourhood of Victoria, this stunning property offers a truly unique and versatile setting for your next event. Formerly a premier equestrian center, the venue boasts top-notch facilities including beautifully maintained barns, indoor and outdoor riding rings, and expansive grounds.&lt;/p&gt;&#xA;&lt;p&gt;Imagine hosting your event amidst rolling hayfields with a pastoral outlook, utilizing the charming 4,000 sq. ft. farmhouse with its massive wrap-around deck for gatherings, or incorporating the impressive equestrian facilities into your event&amp;rsquo;s theme. With updated services and convenient access just 15 minutes from Victoria and 20 minutes from the International Airport, this property provides both tranquility and accessibility.&lt;/p&gt;</description>
     </item>
   </channel>
