@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = '/dooley_downs/public/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 
