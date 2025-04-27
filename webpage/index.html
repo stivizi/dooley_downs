@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dooley Downs Events</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #000; /* Black background for the page */
+            color: #333;
+        }
+        .hero {
+            background-image: url('../static/events/grounds_47.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 150px 20px;
+            position: relative;
+            height: 50vh; /* Set hero height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.75); /* Black mask with 75% opacity */
+        }
+        .hero h2, .hero p {
+            position: relative;
+            z-index: 1;
+        }
+        .hero h2 {
+            font-size: 3.5em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .hero p {
+            font-size: 1.8em;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+        .info {
+            padding: 100px; /* 50px padding for info section */
+            text-align: center;
+            color: #fff; /* White text for info section */
+        }
+        .info p {
+            font-size: 1.1em;
+            color: #fff; /* Ensure paragraph text is white */
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 100px; /* 50px padding for gallery section */
+        }
+        .gallery a {
+            display: block;
+            overflow: hidden;
+            position: relative;
+        }
+        .gallery img {
+            width: 100%;
+            height: 200px; /* Fixed height for thumbnails */
+            object-fit: cover; /* Crop image to fit */
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h2>Welcome to Dooley Downs</h2>
+        <p>Host Your Unforgettable Event. Reserve Now!</p>
+    </section>
+
+    <section class="info">
+        <p>Nestled on over 26 acres in the picturesque Cordova Bay neighbourhood of Victoria, this stunning property offers a truly unique and versatile setting for your next event. Formerly a premier equestrian center, the venue boasts top-notch facilities including beautifully maintained barns, indoor and outdoor riding rings, and expansive grounds.</p>
+        <p>Imagine hosting your event amidst rolling hayfields with a pastoral outlook, utilizing the charming 4,000 sq. ft. farmhouse with its massive wrap-around deck for gatherings, or incorporating the impressive equestrian facilities into your event’s theme. With updated services and convenient access just 15 minutes from Victoria and 20 minutes from the International Airport, this property provides both tranquility and accessibility.</p>
+        <p>Whether you’re planning a corporate retreat, a wedding, a private party, or a specialized event, the exceptional features and serene beauty of this property will create an unforgettable experience for your guests. Explore the images below to envision the possibilities for your event at this remarkable venue.</p>
+        </section>
+        
+
+    <section class="gallery">
+        <a href="../static/events/grounds_41.jpg" target="_blank"><img src="../static/events/grounds_41.jpg" alt="Gallery Image"></a>
+        <a href="../static/events/grounds_42.jpg" target="_blank"><img src="../static/events/grounds_42.jpg" alt="Gallery Image"></a>
+        <a href="../static/events/grounds_43.jpg" target="_blank"><img src="../static/events/grounds_43.jpg" alt="Gallery Image"></a>
+        <a href="../static/events/grounds_44.jpg" target="_blank"><img src="../static/events/grounds_44.jpg" alt="Gallery Image"></a>
+        <a href="../static/events/grounds_45.jpg" target="_blank"><img src="../static/events/grounds_45.jpg" alt="Gallery Image"></a>
+        <a href="../static/events/grounds_46.jpg" target="_blank"><img src="../static/events/grounds_46.jpg" alt="Gallery Image"></a>
+        <a href="../static/events/grounds_47.jpg" target="_blank"><img src="../static/events/grounds_47.jpg" alt="Gallery Image"></a>
+        <a href="../static/events/grounds_48.jpg" target="_blank"><img src="../static/events/grounds_48.jpg" alt="Gallery Image"></a>
+        <a href="../static/events/grounds_49.jpg" target="_blank"><img src="../static/events/grounds_49.jpg" alt="Gallery Image"></a>
+        <a href="../static/events/grounds_51.jpg" target="_blank"><img src="../static/events/grounds_51.jpg" alt="Gallery Image"></a>
+        <a href="../static/events/grounds_52.jpg" target="_blank"><img src="../static/events/grounds_52.jpg" alt="Gallery Image"></a>
+        <a href="../static/events/grounds_53.jpg" target="_blank"><img src="../static/events/grounds_53.jpg" alt="Gallery Image"></a>
+        <a href="../static/events/grounds_54.jpg" target="_blank"><img src="../static/events/grounds_54.jpg" alt="Gallery Image"></a>
+        <a href="../static/events/wedding_event_3.jpg" target="_blank"><img src="../static/events/wedding_event_3.jpg" alt="Gallery Image"></a>
+        <a href="../static/events/wedding_event_4.jpg" target="_blank"><img src="../static/events/wedding_event_4.jpg" alt="Gallery Image"></a>
+        <a href="../static/events/wedding_event_5.jpg" target="_blank"><img src="../static/events/wedding_event_5.jpg" alt="Gallery Image"></a>
+        <a href="../static/events/wedding_event_6.jpg" target="_blank"><img src="../static/events/wedding_event_6.jpg" alt="Gallery Image"></a>
+        <a href="../static/events/wedding_event_7.jpg" target="_blank"><img src="../static/events/wedding_event_7.jpg" alt="Gallery Image"></a>
+        <a href="../static/events/wedding_event_8.jpg" target="_blank"><img src="../static/events/wedding_event_8.jpg" alt="Gallery Image"></a>
+        <a href="../static/events/wedding_event_9.jpg" target="_blank"><img src="../static/events/wedding_event_9.jpg" alt="Gallery Image"></a>
+        <a href="../static/events/wedding_event_10.jpg" target="_blank"><img src="../static/events/wedding_event_10.jpg" alt="Gallery Image"></a>
+    </section>
+</body>
+</html>
