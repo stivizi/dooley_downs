@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://stivizi.github.io/dooley_downs/</loc>
+    <loc>http://localhost:1313/dooley_downs/</loc>
     <lastmod>2023-10-27T10:00:00-04:00</lastmod>
   </url><url>
-    <loc>https://stivizi.github.io/dooley_downs/categories/</loc>
+    <loc>http://localhost:1313/dooley_downs/categories/</loc>
   </url><url>
-    <loc>https://stivizi.github.io/dooley_downs/tags/</loc>
+    <loc>http://localhost:1313/dooley_downs/tags/</loc>
   </url><url>
-    <loc>https://stivizi.github.io/dooley_downs/venue-images/</loc>
+    <loc>http://localhost:1313/dooley_downs/venue-images/</loc>
   </url>
 </urlset>
