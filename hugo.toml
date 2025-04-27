@@ -1,4 +1,4 @@
-baseURL = '/dooley_downs/public/'
+baseURL = 'https://stivizi.github.io/dooley_downs/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 
