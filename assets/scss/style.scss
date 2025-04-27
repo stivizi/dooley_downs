@@ -353,9 +353,10 @@ footer {
     max-height: 40px;
 }
 
-// Import partials (example)
-// @import "sections/hero";
-// @import "components/button";
+// Import partials
+@import "sass/variables";
+@import "sass/layout";
+@import "sass/components";
 
 .intro, .features, .transform, .quote, .cta {
     padding: 80px 0;
@@ -437,4 +438,3 @@ hr {
     max-width: 300px; /* Maximum allowed width */
     margin: 0 auto; /* Center horizontally */
   }
-  
