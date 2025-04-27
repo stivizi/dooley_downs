@@ -1,0 +1,6 @@
+baseURL = '/dooley_downs/docs/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+
+[params]
+site_description = 'A simple home page built with Hugo.'

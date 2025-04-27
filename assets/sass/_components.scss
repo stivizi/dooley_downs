@@ -1,0 +1,83 @@
+// Styles for components (e.g., buttons, image grids, homepage content)
+.homepage-content {
+  text-align: center;
+  margin-bottom: 40px;
+
+  h1 {
+    color: $primary-color;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: $text-color;
+    margin-bottom: 20px;
+  }
+}
+
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  color: #fff; // White text for readability on background image
+  text-align: center;
+  padding: 100px 20px; // Adjust padding as needed
+  position: relative; // Needed for overlay
+  min-height: 33vh;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.66); // 75% black overlay for text readability
+  }
+
+  .hero-content {
+    position: relative; // Bring content above overlay
+    z-index: 1; // Ensure content is above overlay
+    display: flex; // Enable Flexbox
+    flex-direction: column; // Stack items vertically
+    justify-content: center; // Center items vertically
+    align-items: center; // Center items horizontally
+    height: 100%; // Make container take full height
+
+    h1 {
+      color: #e7e7e7; // White color for hero title
+      margin-bottom: 5px; // Reduced spacing below heading
+      font-size: 2.5em; // Larger font size for title
+    }
+
+    p {
+      color: #e7e7e7; // White color for hero description
+      font-size: 1.2em; // Slightly larger font size for description
+    }
+  }
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+
+  a {
+    display: block;
+    height: 200px; // Set a fixed height for grid items
+    overflow: hidden; // Hide overflowing parts of the image
+  }
+
+  img {
+    width: 100%;
+    height: 100%; // Make image take full height of container
+    object-fit: cover; // Crop image to cover the container
+    display: block;
+    border-radius: 5px; // Slightly rounded corners for images
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Subtle shadow
+    transition: transform 0.3s ease-in-out; // Smooth hover effect
+
+    &:hover {
+      transform: scale(1.05); // Slightly enlarge on hover
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<section class="image-grid">
+  {{ $images := .images }}
+  {{ range $image := $images }}
+    {{ if reflect.IsMap $image }}
+      {{ partial "image_card.html" $image.image }}
+    {{ else }}
+      {{ partial "image_card.html" $image }}
+    {{ end }}
+  {{ end }}
+</section>

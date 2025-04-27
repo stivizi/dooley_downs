@@ -1,0 +1,11 @@
+{{ define "title" }}
+    Home | My Hugo Site
+{{ end }}
+
+{{ define "main" }}
+    {{ partial "hero_section.html" . }}
+    {{ partial "text_section.html" . }}
+    {{ partial "homepage_content.html" . }}
+    {{ partial "image_grid.html" (dict "images" .Site.Data.homepage_images) }}
+    {{ partial "image_grid.html" (dict "images" .Site.Data.homepage_wedding_images) }}
+{{ end }}

@@ -1,0 +1,195 @@
+// Variables
+$primary-color: #ef0000; // Updated based on the old site's button color
+$secondary-color: #188bf6;
+$white: #ffffff;
+$gray: #cbd5e0;
+$black: #000000;
+$red: #e93d3d;
+$orange: #f6ad55;
+$yellow: #faf089;
+$green: #9ae6b4;
+$teal: #81e6d9;
+$malibu: #63b3ed;
+$indigo: #757BBD;
+$purple: #d6bcfa;
+$pink: #fbb6ce;
+$transparent: transparent;
+$overlay: rgba(0, 0, 0, 0.5);
+$text-color-dark: #2c3e50; // Based on intro section text color
+$text-color-light: var(--white); // Based on hero section text color
+
+// Fonts (using system fonts as a minimalist approach, or could include the bunny.net link)
+body {
+    font-family: sans-serif; // Using a generic sans-serif
+    line-height: 1.6;
+    color: $text-color-dark; // Default text color
+    background-color: $white; // Default background color
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500; // Based on old site's heading weight
+    margin: unset;
+}
+
+p {
+    margin: unset;
+}
+
+.container {
+    max-width: 1170px; // Based on the widest container in the old source
+    margin: 0 auto;
+    padding: 0 15px; // Standard padding
+}
+
+.column {
+    width: 100%;
+    padding: 0 15px; // Standard column padding
+}
+
+section {
+    padding: 40px 0; // Default section padding
+}
+
+/* Section Specific Styles */
+
+header {
+    background-color: $black; // Based on old header background
+    padding: 10px 0;
+    color: $white; // Header text color
+}
+
+.hero {
+    background-color: $black; // Based on old hero background
+    color: $white; // Hero text color
+    text-align: center;
+    background-image: url('/images/background_hero.jpg'); // Keep the background image
+    background-size: cover;
+    background-position: center;
+    padding-top: 200px; // Based on old hero padding
+    padding-bottom: 200px; // Based on old hero padding
+}
+
+.intro {
+    background-color: $white; // Based on old intro background
+    color: $text-color-dark; // Intro text color
+    text-align: center;
+    padding-top: 100px; // Based on old intro padding
+    padding-bottom: 100px; // Based on old intro padding
+}
+
+.features {
+    background-color: transparent; // No explicit background in old source for this section
+    color: $text-color-dark; // Features text color
+    text-align: center; // Based on old features text align
+    padding-top: 100px; // Based on old features padding
+    padding-bottom: 100px; // Based on old features padding
+}
+
+.features article {
+    margin-bottom: 20px; // Add some spacing between feature items
+}
+
+.features img {
+    width: 100px; // Example image width, can be adjusted
+    height: auto;
+    margin-bottom: 10px; // Space below image
+}
+
+.transform {
+    background-image: url('https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2156987643/settings_images/54ebdbc-1c-807d-87ba-61b4c0e2abf8_vecteezy_ai-generated-a-business-man-and-woman-look-at-paper-and-talk_37337466_1.jpg'); // Based on old transform background
+    background-position: center;
+    background-size: cover;
+    color: $white; // Transform text color
+    text-align: center;
+    padding-top: 150px; // Based on old transform padding
+    padding-bottom: 150px; // Based on old transform padding
+    position: relative; // Needed for overlay
+}
+
+.transform::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.33); // Based on old overlay
+    z-index: 1;
+}
+
+.transform .container {
+    position: relative;
+    z-index: 2;
+}
+
+
+.quote {
+    background-color: transparent; // No explicit background in old source
+    color: $text-color-dark; // Quote text color
+    text-align: center;
+    padding-top: 100px; // Based on old quote padding
+    padding-bottom: 100px; // Based on old quote padding
+}
+
+.quote blockquote {
+    font-style: italic; // Based on old quote style
+    margin-bottom: 10px;
+}
+
+.quote img {
+    width: 50px; // Based on old quote image width
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+.cta {
+    background-image: url('https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2156987643/settings_images/cca281-c3a-50-66f5-6ba40afd4d_main_street.jpg'); // Based on old cta background
+    background-position: center;
+    background-size: cover;
+    color: $white; // CTA text color
+    text-align: center;
+    padding-top: 200px; // Based on old cta padding
+    padding-bottom: 200px; // Based on old cta padding
+    position: relative; // Needed for overlay
+}
+
+.cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.33); // Based on old overlay
+    z-index: 1;
+}
+
+.cta .container {
+    position: relative;
+    z-index: 2;
+}
+
+.cta a.btn {
+    display: inline-block;
+    background-color: $primary-color; // Based on old button color
+    color: $white; // Button text color
+    padding: 10px 20px; // Example padding
+    text-decoration: none;
+    border-radius: 0; // Based on old button border radius
+    margin-top: 20px; // Space above button
+}
+
+
+footer {
+    background-color: $white; // Based on old footer background
+    color: $black; // Footer text color
+    padding: 20px 0;
+    text-align: center;
+}
+
+// Import partials (example)
+// @import "sections/hero";
+// @import "components/button";

@@ -1,0 +1,7 @@
+<h2>{{- .Site.Data.landing_page.features.title -}}</h2>
+<div class="column">
+    <!-- Feature items will go here -->
+    {{- range .Site.Data.landing_page.features.items -}}
+    {{- partial "features-item.html" . -}}
+    {{- end -}}
+</div>

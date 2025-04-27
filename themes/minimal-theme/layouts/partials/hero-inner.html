@@ -1,0 +1,11 @@
+<style>
+    .hero {
+        --hero-background-image: url('{{- .Site.Data.landing_page.hero.background_image | absURL -}}');
+    }
+</style>
+<article>
+    <!-- Hero content -->
+    <h2>{{- replace (replace .Site.Data.landing_page.hero.title "NEVER" "<span class=\"highlight-red\">NEVER</span>") "ON YOUR OWN" "<br><span class=\"highlight-red\">ON YOUR OWN</span>" | safeHTML -}}</h2>
+    <p>{{- replace .Site.Data.landing_page.hero.subtitle "BUILD AND SHARE ARTIFICIAL INTELLIGENCE TOOLS" "<span class=\"highlight-red\">BUILD AND SHARE ARTIFICIAL INTELLIGENCE TOOLS</span>" | safeHTML -}}</p>
+    <a href="#" class="btn">Join MaiN Street</a>
+</article>

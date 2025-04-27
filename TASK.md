@@ -1,0 +1,10 @@
+- Moved `assets/images/footer_logo.png` to `static/images/footer_logo.png`.
+- Updated the image source in `themes/minimal-theme/layouts/partials/footer.html` to `/images/footer_logo.png`.
+- Removed the `&copy;` element from the footer.
+- Set the maximum height for all relevant images on the page to 50px in `assets/scss/style.scss`.
+- Added a horizontal line with a length of 200px under the footer image.
+- Added a paragraph with the text "THE PRIVATE AI NETWORK FOR HIGH-PERFORMING INDIVIDUALS" under the horizontal line and made the text smaller.
+- Added the `main_street_logo_section.png` image above the horizontal line in the footer.
+- Updated image links in `data/landing_page.yaml` to point to images in the `static/images/` directory.
+- Fixed the alignment of the text in the features section by centering the text within each feature item and adding space between the image and text.
+- Adjusted vertical alignment of feature icons.

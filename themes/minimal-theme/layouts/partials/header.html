@@ -1,0 +1,15 @@
+<header>
+    <div class="container">
+        <div class="column">
+            <!-- Header content -->
+            <div class="header-logo">
+                <img src="/images/main_street_logo_light.png" alt="Main Street Logo" class="main-street-logo">
+            </div>
+            <nav class="header-nav">
+                {{- range .Site.Data.landing_page.header.nav_items -}}
+                    <a href="{{- .link -}}">{{- .text -}}</a>
+                {{- end -}}
+            </nav>
+        </div>
+    </div>
+</header>

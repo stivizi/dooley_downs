@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Test Page</title>
+    <style>
+        /* Variables */
+/* These were SCSS variables and have been replaced with their values */
+/* $primary-color: #ef0000; */
+/* $secondary-color: #188bf6; */
+/* $white: #ffffff; */
+/* $gray: #cbd5e0; */
+/* $black: #000000; */
+/* $red: #e93d3d; */
+/* $orange: #f6ad55; */
+/* $yellow: #faf089; */
+/* $green: #9ae6b4; */
+/* $teal: #81e6d9; */
+/* $malibu: #63b3ed; */
+/* $indigo: #757BBD; */
+/* $purple: #d6bcfa; */
+/* $pink: #fbb6ce; */
+/* $transparent: transparent; */
+/* $overlay: rgba(0, 0, 0, 0.5); */
+/* $text-color-dark: #2c3e50; */
+/* $text-color-light: $white; */
+
+/* Spacing variables (using rem for better scalability) */
+/* $spacing-unit: 1rem; */
+/* $spacing-small: $spacing-unit * 0.5; */
+/* $spacing-medium: $spacing-unit; */
+/* $spacing-large: $spacing-unit * 1.5; */
+/* $spacing-xlarge: $spacing-unit * 2; */
+/* $spacing-xxlarge: $spacing-unit * 3; */
+/* $spacing-section: $spacing-unit * 5; */
+
+/* Typography variables (using rem) */
+/* $base-font-size: 0.875rem; */
+/* $line-height-base: 1.6; */
+
+/* $font-size-h1: $base-font-size * 2.5; */
+/* $font-size-h2: $base-font-size * 2; */
+/* $font-size-h3: $base-font-size * 1.75 * 0.85; */
+/* $font-size-h4: $base-font-size * 1.5; */
+/* $font-size-h5: $base-font-size * 1.25; */
+/* $font-size-h6: $base-font-size; */
+
+/* Base styles (minimal reset) */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 0.875rem; /* Replaced $base-font-size */
+    line-height: 1.6; /* Replaced $line-height-base */
+    color: #2c3e50; /* Replaced $text-color-dark */
+    background-color: #000000; /* Replaced $black */
+    margin: 0;
+    padding: 0;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 2rem; /* Replaced $spacing-xlarge (0.875 * 2 = 1.75rem, adjusted for readability) */
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+h1 { font-size: 2.1875rem; /* Replaced $font-size-h1 (0.875 * 2.5) */ }
+h2 { font-size: 1.75rem; /* Replaced $font-size-h2 (0.875 * 2) */ }
+h3 { font-size: 1.309375rem; /* Replaced $font-size-h3 (0.875 * 1.75 * 0.85) */ }
+h4 { font-size: 1.3125rem; /* Replaced $font-size-h4 (0.875 * 1.5) */ }
+h5 { font-size: 1.09375rem; /* Replaced $font-size-h5 (0.875 * 1.25) */ }
+h6 { font-size: 0.875rem; /* Replaced $font-size-h6 (0.875) */ }
+
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem; /* Replaced $spacing-medium */
+}
+
+/* Default hyperlink style */
+a {
+    color: #ffffff; /* Replaced $white */
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 1rem; /* Replaced $spacing-medium */
+}
+
+.column {
+    width: 100%;
+    padding: 0 1rem; /* Replaced $spacing-medium */
+}
+
+.column article {
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+section {
+    padding: 1.5rem 0; /* Replaced $spacing-large */
+    min-height: 33vh;
+}
+
+/* General Button Style */
+.btn {
+    display: inline-block;
+    background-color: #ef0000; /* Replaced $primary-color */
+    color: #ffffff; /* Replaced $white */
+    padding: 0.5rem 1rem; /* Replaced $spacing-small $spacing-medium */
+    text-decoration: none;
+    border-radius: 0;
+    cursor: pointer;
+    margin-top: 1rem; /* Replaced $spacing-medium */
+    border: none;
+}
+
+
+/* Section Specific Styles */
+
+header {
+    background-color: #000000; /* Replaced $black */
+    padding: 0.5rem 0; /* Replaced $spacing-small */
+    color: #ffffff; /* Replaced $white */
+}
+
+header .column {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header-logo img {
+    height: auto;
+    width: auto;
+    max-height: 40px;
+}
+
+header .header-nav a {
+    color: #ffffff; /* Replaced $white */
+    text-decoration: none;
+    background-color: transparent;
+    padding: 0;
+    margin-left: 0.5rem; /* Replaced $spacing-small */
+}
+
+
+.hero {
+    background-color: #000000; /* Replaced $black */
+    color: #ffffff; /* Replaced $white */
+    text-align: center;
+    background-image: var(--hero-background-image);
+    background-size: cover;
+    background-position: center;
+    padding-top: 5rem; /* Replaced $spacing-section */
+    padding-bottom: 5rem; /* Replaced $spacing-section */
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2 {
+    font-size: 2.1875rem; /* Replaced $font-size-h1 */
+    text-shadow: black 1px 1px;
+    text-align: center;
+    line-height: 1.2;
+    color: #ffffff; /* Replaced $white */
+    margin-bottom: 1rem; /* Replaced $spacing-medium */
+}
+
+.hero .highlight-red {
+    background-color: #ef0000; /* Replaced $primary-color */
+    color: #ffffff; /* Replaced $white */
+    padding: 0 0.5rem; /* Replaced $spacing-small */
+}
+
+
+.intro {
+    background-color: #ffffff; /* Replaced $white */
+    color: #2c3e50; /* Replaced $text-color-dark */
+    text-align: center;
+    padding-top: 5rem; /* Replaced $spacing-section */
+    padding-bottom: 5rem; /* Replaced $spacing-section */
+}
+
+/* Style for the intro image */
+.intro img {
+    max-height: 2rem; /* Replaced $spacing-xlarge */
+    height: auto;
+    margin-bottom: 1rem; /* Replaced $spacing-medium */
+}
+
+.features {
+    background-color: transparent;
+    color: #ffffff; /* Replaced $white */
+    text-align: center;
+    padding-top: 5rem; /* Replaced $spacing-section */
+    padding-bottom: 5rem; /* Replaced $spacing-section */
+}
+
+.features .column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem; /* Replaced $spacing-xxlarge */
+    padding: 0 1rem; /* Replaced $spacing-medium */
+}
+
+.features article {
+    flex: 1 1 300px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features img {
+    height: auto;
+    width: auto;
+    max-height: 50px;
+    margin-bottom: 1rem; /* Replaced $spacing-medium */
+}
+
+.features article h3 {
+    margin-bottom: 0;
+}
+
+.features article div {
+    text-align: center;
+}
+
+.features article p {
+    margin-top: 0.5rem; /* Replaced $spacing-small */
+}
+
+.transform {
+    background-image: url('https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2156987643/settings_images/54ebdbc-1c-807d-87ba-61b4c0e2abf8_vecteezy_ai-generated-a-business-man-and-woman-look-at-paper-and-talk_37337466_1.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #ffffff; /* Replaced $white */
+    padding-top: 5rem; /* Replaced $spacing-section */
+    padding-bottom: 5rem; /* Replaced $spacing-section */
+    position: relative;
+}
+
+.transform::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.33); /* Replaced $overlay with 0.33 opacity */
+    z-index: 1;
+}
+
+.transform .container {
+    position: relative;
+    z-index: 2;
+}
+
+
+.quote {
+    background-color: transparent;
+    color: #ffffff; /* Replaced $white */
+    text-align: center;
+    padding-top: 5rem; /* Replaced $spacing-section */
+    padding-bottom: 5rem; /* Replaced $spacing-section */
+}
+
+.quote blockquote {
+    font-style: italic;
+    margin-bottom: 1rem; /* Replaced $spacing-medium */
+}
+
+.quote img {
+    width: 1.5rem; /* Replaced $spacing-large */
+    height: auto;
+    margin-bottom: 0.5rem; /* Replaced $spacing-small */
+}
+
+
+.cta {
+    background-image: url('https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2156987643/settings_images/cca281-c3a-50-66f5-6ba40afd4d_main_street.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #ffffff; /* Replaced $white */
+    text-align: center;
+    padding-top: 5rem; /* Replaced $spacing-section */
+    padding-bottom: 5rem; /* Replaced $spacing-section */
+    position: relative;
+}
+
+.cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.33); /* Replaced $overlay with 0.33 opacity */
+    z-index: 1;
+}
+
+.cta .container {
+    position: relative;
+    z-index: 2;
+}
+
+.cta a.btn {
+    display: inline-block;
+    background-color: #ef0000; /* Replaced $primary-color */
+    color: #ffffff; /* Replaced $white */
+    padding: 0.5rem 1rem; /* Replaced $spacing-small $spacing-medium */
+    text-decoration: none;
+    border-radius: 0;
+    margin-top: 1.5rem; /* Replaced $spacing-large */
+    border: none;
+}
+
+
+footer {
+    background-color: #ffffff; /* Replaced $white */
+    color: #000000; /* Replaced $black */
+    padding: 1rem 0; /* Replaced $spacing-medium */
+    text-align: center;
+}
+
+footer img {
+    height: auto;
+    width: auto;
+    max-height: 40px;
+}
+
+/* Import partials (example) */
+/* @import "sections/hero"; */
+/* @import "components/button"; */
+
+.intro, .features, .transform, .quote, .cta {
+    padding: 80px 0;
+}
+
+
+.gallery-grounds,
+.gallery-wedding {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 16px; /* Gap between grid items */
+    padding: 16px; /* Padding around the grid */
+    margin-bottom: 32px; /* Add space between the two galleries */
+}
+
+.gallery-grounds img,
+.gallery-wedding img {
+    display: block; /* Remove extra space below images */
+    width: 100%; /* Make images fill their grid cell */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the area without distorting aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.gallery-grounds img:hover,
+.gallery-wedding img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Modern styles for Venue Images page */
+main {
+    padding: 40px 20px; /* Add some padding around the main content */
+    max-width: 1200px; /* Limit the maximum width of the content */
+    margin: 0 auto; /* Center the content */
+    color: #e0e0e0; /* Light gray text color for better contrast on dark background */
+}
+
+main h1,
+main h2 {
+    color: #ffffff; /* White color for headings */
+    text-align: center; /* Center align headings */
+    margin-bottom: 30px; /* Add space below headings */
+}
+
+main p {
+    text-align: center; /* Center align paragraphs */
+    margin-bottom: 40px; /* Add space below paragraphs */
+    font-size: 1.1rem; /* Slightly larger font size for readability */
+    line-height: 1.8; /* Increased line height for readability */
+}
+
+.gallery-grounds,
+.gallery-wedding {
+    gap: 20px; /* Increase gap between grid items */
+    padding: 0; /* Remove padding around the grid, use main padding instead */
+    margin-bottom: 50px; /* Increase space between galleries */
+}
+
+.gallery-grounds a,
+.gallery-wedding a {
+    display: block; /* Make the anchor tag a block element to contain the image */
+    border-radius: 8px; /* Match image border radius */
+    overflow: hidden; /* Hide parts of the image that exceed the border radius on hover scale */
+}
+
+.gallery-grounds img,
+.gallery-wedding img {
+    border-radius: 0; /* Remove border radius from image, apply to anchor instead */
+    box-shadow: none; /* Remove box shadow from image */
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <h1>Test Page with Styling and Grid</h1>
+            <p>This is a test to see if the CSS is loading correctly and the grid is working.</p>
+
+            <h2>Grid Test</h2>
+            <div class="gallery-grounds">
+                <div>Item 1</div>
+                <div>Item 2</div>
+                <div>Item 3</div>
+                <div>Item 4</div>
+                <div>Item 5</div>
+                <div>Item 6</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

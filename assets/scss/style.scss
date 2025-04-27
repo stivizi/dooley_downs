@@ -1,0 +1,440 @@
+// Variables
+$primary-color: #ef0000; // Updated based on the old site's button color
+$secondary-color: #188bf6;
+$white: #ffffff;
+$gray: #cbd5e0;
+$black: #000000;
+$red: #e93d3d;
+$orange: #f6ad55;
+$yellow: #faf089;
+$green: #9ae6b4;
+$teal: #81e6d9;
+$malibu: #63b3ed;
+$indigo: #757BBD;
+$purple: #d6bcfa;
+$pink: #fbb6ce;
+$transparent: transparent;
+$overlay: rgba(0, 0, 0, 0.5);
+$text-color-dark: #2c3e50; // Based on intro section text color
+$text-color-light: $white; // Based on hero section text color
+
+// Spacing variables (using rem for better scalability)
+$spacing-unit: 1rem; // 16px base
+$spacing-small: $spacing-unit * 0.5; // 8px
+$spacing-medium: $spacing-unit; // 16px
+$spacing-large: $spacing-unit * 1.5; // 24px
+$spacing-xlarge: $spacing-unit * 2; // 32px
+$spacing-xxlarge: $spacing-unit * 3; // 48px
+$spacing-section: $spacing-unit * 5; // 80px for section padding
+
+// Typography variables (using rem)
+$base-font-size: 0.875rem; // Reduced base font size to 14px
+$line-height-base: 1.6;
+
+$font-size-h1: $base-font-size * 2.5; // 40px
+$font-size-h2: $base-font-size * 2; // 32px
+$font-size-h3: $base-font-size * 1.75 * 0.85; // Reduced by 15%
+$font-size-h4: $base-font-size * 1.5; // 24px
+$font-size-h5: $base-font-size * 1.25; // 20px
+$font-size-h6: $base-font-size; // 16px
+
+// Base styles (minimal reset)
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif; // Using a generic sans-serif
+    font-size: $base-font-size;
+    line-height: $line-height-base;
+    color: $text-color-dark; // Default text color
+    background-color: $black; // Revert to black background color
+    margin: 0;
+    padding: 0;
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500; // Consistent font weight
+    margin-top: 0;
+    margin-bottom: $spacing-xlarge; // Further increased spacing below headings
+    line-height: 1.2; // Consistent line height for headings
+    text-transform: uppercase; // Make all headings all caps
+    font-family: 'Montserrat', sans-serif; // Set font to Montserrat
+    text-align: center;
+}
+
+h1 { font-size: $font-size-h1; }
+h2 { font-size: $font-size-h2; }
+h3 { font-size: $font-size-h3; }
+h4 { font-size: $font-size-h4; }
+h5 { font-size: $font-size-h5; }
+h6 { font-size: $font-size-h6; }
+
+
+p {
+    margin-top: 0;
+    margin-bottom: $spacing-medium; // Consistent spacing below paragraphs
+}
+
+/* Default hyperlink style */
+a {
+    color: $white; // Plain white text color
+    text-decoration: none; // Remove underline
+}
+
+.container {
+    max-width: 1300px; // Set max width for the site
+    margin: 0 auto; // Center the container
+    padding: 0 $spacing-medium; // Use spacing variable for horizontal padding
+}
+
+.column {
+    width: 100%;
+    padding: 0 $spacing-medium; // Use spacing variable for horizontal padding
+}
+
+.column article {
+    max-width: 90%; // Limit content width
+    margin: 0 auto; // Center content
+    text-align: center;
+}
+
+
+section {
+    padding: $spacing-large 0; // Default section padding
+    min-height: 33vh; // Set minimum height for sections
+}
+
+/* General Button Style */
+.btn {
+    display: inline-block;
+    background-color: $primary-color; // Red background
+    color: $white; // White text
+    padding: $spacing-small $spacing-medium; // Use spacing variables for padding
+    text-decoration: none;
+    border-radius: 0; // Square corners
+    cursor: pointer; // Indicate it's clickable
+    margin-top: $spacing-medium; // Consistent margin above buttons
+    border: none; // Remove default button border
+}
+
+
+/* Section Specific Styles */
+
+header {
+    background-color: $black; // Based on old header background
+    padding: $spacing-small 0;
+    color: $white; // Header text color
+}
+
+header .column {
+    display: flex; // Use flexbox for horizontal arrangement
+    justify-content: space-between; // Space out logo and nav
+    align-items: center; // Vertically align items
+}
+
+header .header-logo img {
+    height: auto; // Revert logo height
+    width: auto;
+    max-height: 40px;
+}
+
+header .header-nav a {
+    color: $white; // Plain white text color
+    text-decoration: none; // Remove underline
+    background-color: transparent; // Remove background color
+    padding: 0; // Remove padding
+    margin-left: $spacing-small; // Space between links
+}
+
+
+.hero {
+    background-color: $black; // Based on old hero background
+    color: $white; // Hero text color
+    text-align: center;
+    background-image: var(--hero-background-image); // Use the CSS variable
+    background-size: cover;
+    background-position: center;
+    padding-top: $spacing-section; // Use section spacing
+    padding-bottom: $spacing-section; // Use section spacing
+    height: 75vh; // Keep hero height
+    display: flex; // Use flexbox for vertical and horizontal alignment
+    justify-content: center; // Center content horizontally
+    align-items: center; // Center content vertically
+}
+
+.hero * {
+    text-align: center !important;
+}
+
+.hero h2 {
+    font-size: $font-size-h1; // Use h1 font size for hero title
+    text-shadow: black 1px 1px;
+    text-align: center;
+    line-height: 1.2; // Use consistent heading line height
+    color: $white; // Explicitly set color to white
+    margin-bottom: $spacing-medium; // Consistent margin below h2
+}
+
+.hero .highlight-red {
+    background-color: $primary-color; // Red background
+    color: $white; // White text
+    padding: 0 $spacing-small; // Use spacing variable for padding
+}
+
+
+.intro {
+    background-color: $white; // Based on old intro background
+    color: $text-color-dark; // Intro text color
+    text-align: center;
+    padding-top: $spacing-section; // Use section spacing
+    padding-bottom: $spacing-section; // Use section spacing
+}
+
+/* Style for the intro image */
+.intro img {
+    max-height: $spacing-xlarge; // Reduced max height
+    height: auto;
+    margin-bottom: $spacing-medium; // Consistent margin below image
+}
+
+.features {
+    background-color: transparent; // No explicit background in old source for this section
+    color: $white; // Features text color (changed to white)
+    text-align: center; // Based on old features text align
+    padding-top: $spacing-section; // Use section spacing
+    padding-bottom: $spacing-section; // Use section spacing
+}
+
+.features .column {
+    display: flex; // Use flexbox for horizontal arrangement
+    flex-wrap: wrap; // Allow items to wrap
+    justify-content: center; // Center items horizontally
+    gap: $spacing-xxlarge; // Further increased spacing between feature items
+    padding: 0 $spacing-medium; // Add horizontal padding to align with intro
+}
+
+.features article {
+    flex: 1 1 300px; // Increased flex basis
+    margin-bottom: 0; // Remove margin-bottom as gap is used
+    display: flex; // Make article a flex container
+    flex-direction: column; // Stack items vertically
+    align-items: center; // Center items horizontally
+}
+
+.features img {
+    height: auto; // Revert logo height
+    width: auto;
+    max-height: 50px;
+    margin-bottom: $spacing-medium;
+}
+
+.features article h3 {
+    margin-bottom: 0; // Remove margin below h3 in features
+}
+
+.features article div {
+    text-align: center;
+}
+
+.features article p {
+    // margin-top: 0; // Remove margin above p in features
+    margin-top: $spacing-small;
+}
+
+.transform {
+    background-image: url('https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2156987643/settings_images/54ebdbc-1c-807d-87ba-61b4c0e2abf8_vecteezy_ai-generated-a-business-man-and-woman-look-at-paper-and-talk_37337466_1.jpg'); // Based on old transform background
+    background-position: center;
+    background-size: cover;
+    color: $white; // Transform text color
+    padding-top: $spacing-section; // Use section spacing
+    padding-bottom: $spacing-section; // Use section spacing
+    position: relative; // Needed for overlay
+}
+
+.transform::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.33); // Based on old overlay
+    z-index: 1;
+}
+
+.transform .container {
+    position: relative;
+    z-index: 2;
+}
+
+
+.quote {
+    background-color: transparent; // No explicit background in old source
+    color: $white; // Quote text color (changed to white)
+    text-align: center;
+    padding-top: $spacing-section; // Use section spacing
+    padding-bottom: $spacing-section; // Use section spacing
+}
+
+.quote blockquote {
+    font-style: italic; // Keep italic style
+    margin-bottom: $spacing-medium; // Consistent margin below blockquote
+}
+
+.quote img {
+    width: $spacing-large; // Use spacing variable for image width (adjust as needed)
+    height: auto;
+    margin-bottom: $spacing-small; // Consistent margin below image
+}
+
+
+.cta {
+    background-image: url('https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2156987643/settings_images/cca281-c3a-50-66f5-6ba40afd4d_main_street.jpg'); // Based on old cta background
+    background-position: center;
+    background-size: cover;
+    color: $white; // CTA text color
+    text-align: center;
+    padding-top: $spacing-section; // Use section spacing
+    padding-bottom: $spacing-section; // Use section spacing
+    position: relative; // Needed for overlay
+}
+
+.cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.33); // Based on old overlay
+    z-index: 1;
+}
+
+.cta .container {
+    position: relative;
+    z-index: 2;
+}
+
+.cta a.btn {
+    display: inline-block;
+    background-color: $primary-color; // Red background
+    color: $white; // White text
+    padding: $spacing-small $spacing-medium; // Use spacing variables for padding
+    text-decoration: none;
+    border-radius: 0; // Based on old button border radius
+    margin-top: $spacing-large; // Consistent margin above buttons
+    border: none; // Remove default button border
+}
+
+
+footer {
+    background-color: $white; // Based on old footer background
+    color: $black; // Footer text color
+    padding: $spacing-medium 0;
+    border-top: 1px solid $gray; // Add a horizontal line above the footer
+    width: 100%;
+}
+
+/* Paragraph */
+.footer p {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+   }
+   
+
+
+
+.footer img {
+    height: auto; // Revert logo height
+    width: auto;
+    max-height: 40px;
+}
+
+// Import partials (example)
+// @import "sections/hero";
+// @import "components/button";
+
+.intro, .features, .transform, .quote, .cta {
+    padding: 80px 0;
+}
+
+
+.gallery-grounds,
+.gallery-wedding {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 16px; /* Gap between grid items */
+    padding: 16px; /* Padding around the grid */
+    margin-bottom: 32px; /* Add space between the two galleries */
+}
+
+.gallery-grounds img,
+.gallery-wedding img {
+    display: block; /* Remove extra space below images */
+    width: 100%; /* Make images fill their grid cell */
+    height: 250px; /* Set a standard height for grid images */
+    object-fit: cover; /* Cover the area without distorting aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.gallery-grounds img:hover,
+.gallery-wedding img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Modern styles for Venue Images page */
+main {
+    padding: 40px 20px; /* Add some padding around the main content */
+    max-width: 1200px; /* Limit the maximum width of the content */
+    margin: 0 auto; /* Center the content */
+    color: #e0e0e0; /* Light gray text color for better contrast on dark background */
+    background-size: cover; /* Cover the entire element */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+}
+
+main h1,
+main h2 {
+    color: #ffffff; /* White color for headings */
+    text-align: center; /* Center align headings */
+    margin-bottom: 30px; /* Add space below headings */
+}
+
+main p {
+    text-align: center; /* Center align paragraphs */
+    margin-bottom: 40px; /* Add space below paragraphs */
+    font-size: 1.1rem; /* Slightly larger font size for readability */
+    line-height: 1.8; /* Increased line height for readability */
+}
+
+.gallery-grounds,
+.gallery-wedding {
+    gap: 20px; /* Increase gap between grid items */
+    padding: 0; /* Remove padding around the grid, use main padding instead */
+    margin-bottom: 50px; /* Increase space between galleries */
+}
+
+.gallery-grounds a,
+.gallery-wedding a {
+    display: block; /* Make the anchor tag a block element to contain the image */
+    border-radius: 8px; /* Match image border radius */
+    overflow: hidden; /* Hide parts of the image that exceed the border radius on hover scale */
+}
+
+.gallery-grounds img,
+.gallery-wedding img {
+    border-radius: 0; /* Remove border radius from image, apply to anchor instead */
+    box-shadow: none; /* Remove box shadow from image */
+}
+
+hr {
+    width: 50%; /* Set initial width */
+    max-width: 300px; /* Maximum allowed width */
+    margin: 0 auto; /* Center horizontally */
+  }
+  
